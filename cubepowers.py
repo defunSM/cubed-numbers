@@ -70,6 +70,8 @@ def difference_from_previous(array):
 
 def streamline(start, stop, power, show):
     """
+    This is the most top level function which will display everything and call the other helper functions.
+
     Start - The number that will start the initial array.
     Stop - The number that will end the initial array.
     Power - The power that each element in the array will be raised to.
@@ -89,7 +91,9 @@ def streamline(start, stop, power, show):
         values = new_array
 
 def main():
-
+    """
+    main function that will call the most top level function which is streamline.
+    """
     streamline(10, 20, 5, 5)
 
 
