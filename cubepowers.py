@@ -96,16 +96,5 @@ def main():
     """
     streamline(10, 20, 5, 5)
 
-
-
-
-
-
-
-
-
-
-
-
 if __name__=="__main__":
     main()
