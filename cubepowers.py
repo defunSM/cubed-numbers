@@ -94,7 +94,7 @@ def main():
     """
     main function that will call the most top level function which is streamline.
     """
-    streamline(10, 20, 5, 5)
+    streamline(10, 20, 5, 5)  # Start, stop, power, show
 
 if __name__=="__main__":
     main()
