@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import numpy as np
+from optparse import OptionParser
 
 def make_nums(a, b):
     """
@@ -94,7 +95,20 @@ def main():
     """
     main function that will call the most top level function which is streamline.
     """
-    streamline(10, 20, 5, 5)  # Start, stop, power, show
+
+    parser = OptionParser()
+    parser.add_option("-s", "--start", help="Number starting the initial array.")
+    parser.add_option("-e", "--end", help="Number ending the initial array.")
+    parser.add_option("-p", "--power", help="The power that each element in the array will be raised to.")
+    parser.add_option("-l", "--levels", help="How many levels od differences will be shown.")
+
+    options, arguments = parser.parse_args()
+    start = int(options.start)
+    stop = int(options.end)
+    power = int(options.power)
+    levels = int(options.levels)
+
+    streamline(start, stop, power, levels)  # Start, stop, power, show
 
 if __name__=="__main__":
     main()
