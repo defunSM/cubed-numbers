@@ -15,9 +15,12 @@ def factorial(n):
 def customseries(iterations):
     total = 1
     for i in range(1, iterations+1):
-        total = total +
+        total = total + i
     eseries(20)
 
+def main():
+
+    customseries(100)
 
 
 
